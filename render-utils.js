@@ -1,4 +1,4 @@
-export function renderFriendsSticker(friend) {
+export function renderFriendSticker(friend) {
     const div = document.createElement('div');
     const a = document.createElement('a');
     const img = document.createElement('img');
