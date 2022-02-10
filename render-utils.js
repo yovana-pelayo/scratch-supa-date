@@ -4,7 +4,7 @@ export function renderFriendSticker(friend) {
     const img = document.createElement('img');
     const p = document.createElement('p');
 
-    div.classList.add('friends-sticker');
+    div.classList.add('friend-sticker');
 
 // right above we created a render sticker function that will create these elements on our outerHTML. Then we are saying that we will add the list above to teh dive we created that is called friends-sticker.
     p.textContent = friend.name;

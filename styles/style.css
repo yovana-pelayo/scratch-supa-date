@@ -89,3 +89,6 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+.friend-sticker img {
+width: 80%;
+}
