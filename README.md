@@ -23,3 +23,16 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+Objects: friends
+
+
+KEY:   Value:
+
+name: 'carl',
+age: 25,
+hobbies: "
+img: img of friend
+quote: ''  -personal or life quote to live by
+
+renderFriendsDetail
