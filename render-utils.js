@@ -9,7 +9,7 @@ export function renderFriendSticker(friend) {
 // right above we created a render sticker function that will create these elements on our outerHTML. Then we are saying that we will add the list above to teh dive we created that is called friends-sticker.
     p.textContent = `${friend.name} Hobbies: ${friend.hobbies}`;
     img.src = `./assets/${friend.image}`;
-    a.href = `/detail/?id=${friend.name}`; // link to the friends detail page
+    a.href = `/friend/?id=${friend.name}`; // link to the friends detail page
     div.append(p, img);
 
     a.append(div);

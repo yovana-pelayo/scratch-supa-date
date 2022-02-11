@@ -33,7 +33,7 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
@@ -91,4 +91,7 @@ footer {
 }
 .friend-sticker img {
 width: 80%;
+}
+img {
+    size-adjust: 40%;
 }
