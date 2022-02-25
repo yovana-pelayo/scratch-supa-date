@@ -3,21 +3,21 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getFriends() {
-     
-    const friends = await client.from('friends').select('*');
-    // console.log(friends);
-    return checkError(friends);    
-}
-export async function getFriend(id) {
-    const fetchId = await client.from('friends').select('*').eq('id', id).single();
-    return checkError(fetchId);
-}
-
 function checkError({ data, error }) {
     // eslint-disable-next-line no-console
     return error ? console.error(error) : data;
 }
+export async function getFriends() {
+    const resp = await client.from('friends').select('*');
+    // console.log(friends);
+    return checkError(resp);    
+}
+export async function getFriend(id) {
+    const resp = await client.from('friends').select('*').eq('id', id).single();
+    return checkError(resp);
+}
+
+
 
 // we are getting all of the friends names from the table on supaB
 
