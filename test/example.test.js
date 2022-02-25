@@ -6,7 +6,7 @@ const test = QUnit.test;
 test('renderFriend sticker will return a div with an image name and age', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = `<div class=\"friend-sticker\"><a href=\"/detail/?id=undefined\"><p>Samwise Hobbies: </p><img src=\"./assets/undefined\"></a></div>`;
+    const expected = `<div class="friend-sticker"><a href="/detail/?id=undefined"><p>Samwise Hobbies: </p><img src="./assets/undefined"></a></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
